@@ -1,0 +1,56 @@
+Cybersegurança
+
+	Segurança Cibernética
+		Proteger Sistemas
+		Proteger Programas
+		Proteger Redes
+		
+	Malware -> Baidu
+	Phishing -> Email
+	Ransomware -> Ex: Wannacry
+	DDoS
+	...
+	
+	CID - Confidencialidade, Integridade e Disponibilidade
+	
+	Stuxnet -> 2010 - Primeira arma cibernética do mundo
+		Worm para atacar usinas nucleares
+		
+		(EUA) desenvolvendo software (vírus) baseado na vulnerabilidade do software e hardware usado na usina.
+		A partir disso fez o virus para acelerar a centrífuga e causar uma implosão
+	
+	Vamos invadir e nos proteger.
+	
+	Medidas de Proteção:
+		SQL Injection
+		Importância das atualizações de segurança e patches.
+		
+	Ferramentas e Tecnologia
+		IA e Machine Learning na detecção de ameaças
+			Consegue identificar scan de rede, phishing etc.
+	
+	Brasil como maior consumidor de vulnerabilidades
+		Pagar para conhecer 0days
+	
+	Aspectos Legais e Éticos
+		Ética Hacker
+		Eu saber invadir a sua privacidade não te dá o direito
+		Existe uma visão ética
+		
+		O que você faz pode prejudicar muito as pessoas ao seu redor
+		Inclusive te levar para a cadeia
+		
+		LGPD (Brasil) e GDPR
+			Por CPF vazado a empresa é multada em 10.000 reais.
+			Com 13 anos pode acessar o Insta no Brasil, na Europa 16 anos
+		
+	Futuro da Cybernética
+		Computação Quântica (não é 0 ou 1, são 3, 0, 1 e os dois ao mesmo tempo)
+			Consegue quebrar senhas em segundos
+			Por conta da IA também
+				Matriz - Neurônios - 100 bilhões por 100 bilhões
+		IoT
+		Blockchain
+	
+	
+		
