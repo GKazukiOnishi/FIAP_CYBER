@@ -1,0 +1,105 @@
+Protocolo TCP/IP
+	Aplicação
+	Transporte
+	Internet
+	Acesso à Rede
+	
+	Acesso à Rede: Placa de rede e cabo
+		* Se a placa não suportar 1 Gbits/s, não adianta ter internet de 1 Gbits/s
+		* Não adianta ter uma plana de 1 Gbits/s se o cabo não for cat6
+	Internet: IP
+	Transporte: TCP/UDP
+		TCP - Envia dados
+		UDP - Envia áudio e vídeo (não é seguro)
+			Por isso chamadas de vídeo e telefone costumam dar falha
+	Aplicação: HTTP (porta 80), HTTP (porta 443)
+		POP3, SMTP, DNS (53) etc.
+		Banco de dados (3306)
+	
+	(ping é ICMP)
+	
+	Forma de segurança ao banco de dados: Trocar a porta padrão
+	Um SO tem mais de 65 mil portas, como se proteger se você não sabe o que entra em cada porta?
+	
+	Tem como descobrir a porta? Tem, no Brasil nem é crime, mas nos EUA é.
+	
+	Web:
+	1. FUNDAMENTOS
+		1. Basedo em requisição e resposta
+			Cliente envia requisição HTTP ao servidor, que processa e retorna a respsta
+			
+			URL (Uniform Resource Locators):
+				Protocolo
+				Host
+				Porta (usualmente porta 80)
+				Caminho (path)
+				
+				protocolo://host:porta/caminho
+			
+			1. Usuário digita o SITE
+			2. Navegador pergunta ao DNS o IP
+			3. DNS retorna o IP
+			4. Navegador estabelece conexão TCP com a porta 80 em IP
+			5. Navegador envia um GET solicitando o arquivo no /path
+			6. O servidor SITE envia o arquivo /index.html
+			7. O navegador busca todas as imagens e informações necessárias
+			8. Conexão TCP encerra
+			
+			HTTPS:
+				Three Way Handshake + Chave
+				
+				Cliente -> ACK -> Servidor
+				Cliente <- SYNACK <- Servidor
+				Cliente -> ACKSYN -> Servidor
+		2. Sem "Estados" (Stateless)
+			Cada requisição é ma transação isolada, ou seja, independe das outras.
+			Servidor não guarda nada das requisições anteriores.
+			Os Cookies existem para guardar informação
+			
+			Gerenciamento de estado:
+				Cookies
+				Tokens de Sessão
+				Parâmetro de URL e Corpos de Requisição
+		3. Métodos HTTP
+			GET
+			POST
+			PUT
+			DELETE
+			HEAD
+			OPTIONS
+			...
+		
+	2. VERSÕES
+		HTTP/1.0 e HTTP/1.1: Mais antiga, menos segura
+		HTTP/2
+		HTTP/3 (QUIC)
+		HTTPS
+	
+		Ver Slide
+	3. FUNCIONAMENTO
+		Requisição
+		Processamento
+		Resposta
+		Renderização
+		
+		Códigos do RFC 9110 com os códigos de resposta HTTP
+		1. Informativo (100-199)
+		2. Sucesso (200-299)
+		3. Redirecionamento (300-399)
+		4. Erro de cliente (400-499)
+		5. Erro do servidor (500-599)
+	4. CABEÇALHOS HTTP 
+	
+Anotações:
+	wireshark -> app para ver uso da placa de rede no pc
+	systeminfo no cmd retorna dados do sistema
+	bitlocker -> método de criptografia do windows
+	LGPD -> obriga todas as empresas fornecer os logs aos órgãoes de segurança pública (mesmo que criptografado)
+	Privacidade -> pode até saber onde está, mas não o que está fazendo
+	Ser Anônimo -> não sabe onde está ou quem é, mas talvez saiba o que está fazendo
+	Whatsapp -> criptografa texto, não necessariamente imagem/áudio
+	VeraCript -> Container que até hoje não quebraram
+	
+Comandos:
+	ip -br -c a
+	netstat -n1pt
