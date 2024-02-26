@@ -1,0 +1,33 @@
+Terceira Aula
+
+	Qual é o método que eu vou precisar utilizar quando ele copiar e colar um conteudo do meu site?
+	Como saber qual o IP do meu usuário?
+	O professor disse que vai ensinar a como se faz isso e quais métodos nós utilizamos para COPIAR e COLAR algo do meu site.
+	
+	4. Cabeçalhos HTTP
+	
+	User-Agent: o navegador ou cliente identifica que está fazendo a requisição. No servidor ele já identifica o que estão utilizando.
+	
+	Alguem já tentou comprar uma passagem area? Os developers sabem que você ja entrou mais de uma vez no site e aquela passagem que estava
+	no valor de R$2000, passou a ser R$5000. Ou seja, quando você entrou novamente você já entrou no algoritmo. 
+	O professor indicou mudar o User-Agent ou utilizar VPN para comprar passagens.
+	O certo é comprar na hora que entrou pela primeira vez, ou utilizar outro WiFi.
+	
+
+	Accept: São os tipos de mídia que o cliente pode processar; (Json, Midia, Arquivo, XML)
+	Accept-Language: é linguagem preferida que está sendo utilizada;
+	
+	Location: Usado em respostas com o código de status 3xx para indicar o URL para o qual o cliente deve ser redirecionado. 
+	Eles sabem onde você está.
+	O professo disse que indica as VPNs que não estão assinados o tratado de "xxxx" (o professor esqueceu o nome do tratado).
+	Se você estiver utilizando um VPN de um país que tenha assinado esse tratado, outros países podem perguntam para o país 
+	que "teoricamente" você estava com a VPN e esse país por estar nesse tratado pode dizer de onde saiu. 
+	A VPN que o professor indica é CryptoStorm (comprar utilizando giftcard para não ser rastreável)
+	
+	Prática:
+		Acessar no Chrome: https://www.deviceinfo.me/
+							https://browserleaks.com/
+		Acessar no Mozilla: about:config
+								Pesquisar por browser.formfill.enable -> faz os navegadores salvarem o que vc digita no disco
+		App Task Scheduler -> Windows enviando acessos do navegador para o servidor deles
+		
