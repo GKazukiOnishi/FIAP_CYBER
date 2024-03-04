@@ -30,5 +30,7 @@ rm -d nomeDiretorio -> apagar diretório
 nano arq.txt -> editor de texto -> usamos Ctrl + tecla para fazer ações  
   
 cat arq.txt -> mostra o que tem no arquivo  
-
   
+cp arq.txt ../../ -> copiar arquivo  
+  
+
