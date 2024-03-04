@@ -32,5 +32,7 @@ nano arq.txt -> editor de texto -> usamos Ctrl + tecla para fazer ações
 cat arq.txt -> mostra o que tem no arquivo  
   
 cp arq.txt ../../ -> copiar arquivo  
-  
+cp arq.txt /home/aluno/aula3  
+mv arq.txt /home/aluno/aula3  
+
 
