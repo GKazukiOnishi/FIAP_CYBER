@@ -26,6 +26,9 @@ ls -d -> só os que não estão ocultos
 mkdir -m 777 nomeDiretorio -> criar pasta com permissão 777  
 touch nomeFile -> cria arquivo  
 rm -d nomeDiretorio -> apagar diretório  
+  
+nano arq.txt -> editor de texto -> usamos Ctrl + tecla para fazer ações  
+  
+cat arq.txt -> mostra o que tem no arquivo  
 
-
-
+  
