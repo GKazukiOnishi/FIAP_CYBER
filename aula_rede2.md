@@ -19,6 +19,11 @@ iface enp0s9 inet static
 ```
 9. apt update
 10. apt install apache2
+11. apt install net-tools
+12. ifconfig
+13. netstat -nltp
 
 > init 0 -> desliga a máquina  
-> init 6 -> reinicia 
+> init 6 -> reinicia  
+> ssh -> porta 22  
+> apache -> porta 80  
