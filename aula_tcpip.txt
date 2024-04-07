@@ -12,7 +12,7 @@ Protocolo TCP/IP
 		TCP - Envia dados
 		UDP - Envia áudio e vídeo (não é seguro)
 			Por isso chamadas de vídeo e telefone costumam dar falha
-	Aplicação: HTTP (porta 80), HTTP (porta 443)
+	Aplicação: HTTP (porta 80), HTTPS (porta 443)
 		POP3, SMTP, DNS (53) etc.
 		Banco de dados (3306)
 	
