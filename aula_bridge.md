@@ -5,3 +5,4 @@ Para configurar basta utilizar o interfaces novamente, mas configurando o adapte
 3. Fazemos isso no Debian e no Kali
 4. Para testar entramos em uma das máquinas e damos ping em outra, tipo 10.20.23.12.
 5. Subimos um servidor python no Debian: `python3 -m http.server 8080`
+6. Perceba que outras máquinas da fiap conseguem acessar o nosso servidor através do nosso ip 10.20.23.11
