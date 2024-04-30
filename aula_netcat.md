@@ -20,5 +20,22 @@
 18. Fazendo isso, enviamos a requisição já sem avisar o servidor
 19. `printf "OPTIONS / HTTP/1.0\r\n\r\n" | nc 192.168.1.10 80` -> vai dar 200 -> atenção que estamos usando a versão 1.0
 20. Podemos fazer isso para qualquer método HTTP
+21. Como montar um chat entre duas máquinas conectadas em rede?
+22. `nc -lvp 1234` -> Abre uma porta com o netcat escutando
+23. `nc -v 192.168.1.10 1234` -> Abre uma conexão com o IP 192.168.1.10 na porta 1234
+24. Com isso a máquina que rodou o segundo comando consegue enviar mensagens para a outra
+25. Obs: Não é full-duplex, só envia de um lado. Mas você pode fazer o inverso entre as máquinas e aí a outra vai poder enviar mensagem
+26. `md5sum arquivo` -> Gera um hash desse arquivo usando md5
+27. `sha256sum arquivo` -> Gera um hash desse arquivo usando sha256 -> maior que o md5
+28. Hashs são úteis para identificar arquivos iguais, ao alterar qualquer coisa do arquivo o hash já muda. Obs: Ele é único por conteúdo de arquivo
+29. Isso permite identificar arquivos copiados, arquivos sendo enviados via net etc.
+30. Ex: Nudes que precisam ser retirados da internet podem ser identificados assim. Mas se alguém tira print e mexe, por exemplo, não dá para saber a não ser que pegue o hash desse print.
+31. O ideal é avisar o Meta sobre essa foto com o hash, e a polícia
+32. Randomwares -> Sequestram informações e para enviarem elas de volta cobram um valor alto. Mas como que pegam esses dados? Como enviar arquivos?
+33. Como confiar se o arquivo realmente foi enviado sem perda de dados? Usamos o hash!
+34. Para enviar `nc -v 192.168.1.10 1234 > video.avi` -> Vai pegar os bytes e enviar pela rede até o outro IP
+35. Perceba que na outra máquina o arquivo aparece e podemos então verificar os hashes
+36. Outro jeito: No servidor rodamos: `cat arquivo123 | nv -lvp 1234`
+37. Na Outra: `nc -v 192.168.1.10 1234 > arquivo123` -> Perceba que funciona tambem, mas dessa vez deixamos o arquivo disponivel na porta 1234 do 192.168.1.10
 
 * Obs: Podemos mudar o keyboard layout do Kali Linux para o idioma pt-br
