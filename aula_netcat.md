@@ -33,9 +33,8 @@
 31. O ideal é avisar o Meta sobre essa foto com o hash, e a polícia
 32. Randomwares -> Sequestram informações e para enviarem elas de volta cobram um valor alto. Mas como que pegam esses dados? Como enviar arquivos?
 33. Como confiar se o arquivo realmente foi enviado sem perda de dados? Usamos o hash!
-34. Para enviar `nc -v 192.168.1.10 1234 > video.avi` -> Vai pegar os bytes e enviar pela rede até o outro IP
-35. Perceba que na outra máquina o arquivo aparece e podemos então verificar os hashes
-36. Outro jeito: No servidor rodamos: `cat arquivo123 | nv -lvp 1234`
-37. Na Outra: `nc -v 192.168.1.10 1234 > arquivo123` -> Perceba que funciona tambem, mas dessa vez deixamos o arquivo disponivel na porta 1234 do 192.168.1.10
+34. Para enviar: No servidor rodamos: `cat arquivo123 | nv -lvp 1234` -> Vai disponibilizar o arquivo na porta 1234
+35. Na Outra maquina que quiser ver o arquivo: `nc -v 192.168.1.10 1234 > arquivo123` -> Vai pegar os bytes do arquivo pela rede e jogar no arquivo1234
+36. Podemos entao verificar o hash dos arquivos para garantir que sao a mesma coisa
 
 * Obs: Podemos mudar o keyboard layout do Kali Linux para o idioma pt-br
