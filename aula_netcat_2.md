@@ -7,3 +7,4 @@
 4. Com o printf conseguimos ver os métodos HTTP disponíveis, sem ele não, apenas tomamos um 400
 5. Agora no servidor python, tomamos o erro 501 (Unsupported Method) independente do comando.
 6. Por que o printf funciona? Porque ele burla a conexão com o servidor que ocorre ao apertarmos um Enter no comando nc -v. No caso do printf ele faz isso tudo de uma vez e acaba burlando o apache2.
+7. Como passar pelo firewall? Um jeito é usando o netcat no envio de informações, que habilita qualquer um a copiar o arquivo
