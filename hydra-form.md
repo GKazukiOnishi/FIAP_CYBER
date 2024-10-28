@@ -22,3 +22,6 @@ Onde login e senha vieram do formulário em questão, que tem os inputs com o na
 
 # Exploit DB
 Site de vulnerabilidades de todos os sistemas do mundo.  
+
+* CVE
+* Conseguimos pesquisar por vulnerabilidades e descobrir os riscos das tecnologias
